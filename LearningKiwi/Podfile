@@ -1,0 +1,7 @@
+platform :ios, "7.0"
+
+target :LearningTDDBDDTests, :exclusive => true do
+    pod 'Kiwi/XCTest'
+    # pod 'Cedar'
+    # pod 'Specta'
+end
