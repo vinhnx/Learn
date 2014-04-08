@@ -21,6 +21,7 @@
 		84120C2E18F1148200B53C4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84120C1018F1148200B53C4D /* UIKit.framework */; };
 		84120C3618F1148200B53C4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84120C3418F1148200B53C4D /* InfoPlist.strings */; };
 		84120C3818F1148200B53C4D /* PTLAutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84120C3718F1148200B53C4D /* PTLAutoLayoutTests.m */; };
+		848934E018F3BBB1008516DB /* AutoLayoutFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848934DF18F3BBB1008516DB /* AutoLayoutFourthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		84120C3318F1148200B53C4D /* NXVLAutoLayoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NXVLAutoLayoutTests-Info.plist"; sourceTree = "<group>"; };
 		84120C3518F1148200B53C4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84120C3718F1148200B53C4D /* PTLAutoLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTLAutoLayoutTests.m; sourceTree = "<group>"; };
+		848934DE18F3BBB1008516DB /* AutoLayoutFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutFourthViewController.h; sourceTree = "<group>"; };
+		848934DF18F3BBB1008516DB /* AutoLayoutFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutFourthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				84120C1E18F1148200B53C4D /* Main.storyboard */,
 				84120C2118F1148200B53C4D /* NXVViewController.h */,
 				84120C2218F1148200B53C4D /* NXVViewController.m */,
+				848934DE18F3BBB1008516DB /* AutoLayoutFourthViewController.h */,
+				848934DF18F3BBB1008516DB /* AutoLayoutFourthViewController.m */,
 				84120C2418F1148200B53C4D /* Images.xcassets */,
 				84120C1318F1148200B53C4D /* Supporting Files */,
 			);
@@ -254,6 +259,7 @@
 			files = (
 				84120C1918F1148200B53C4D /* main.m in Sources */,
 				84120C2318F1148200B53C4D /* NXVViewController.m in Sources */,
+				848934E018F3BBB1008516DB /* AutoLayoutFourthViewController.m in Sources */,
 				84120C1D18F1148200B53C4D /* NXVAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

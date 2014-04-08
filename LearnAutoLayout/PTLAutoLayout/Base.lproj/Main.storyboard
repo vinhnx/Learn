@@ -42,7 +42,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="225" id="cfi-ZO-Xyv"/>
-                                    <constraint firstAttribute="height" constant="30" id="cxQ-8b-TU9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -146,6 +145,106 @@
             </objects>
             <point key="canvasLocation" x="1228" y="-277"/>
         </scene>
+        <!--Auto Layout Fourth View Controller - Auto Layout #4-->
+        <scene sceneID="8MT-Ki-KDi">
+            <objects>
+                <viewController id="svG-dN-SCy" customClass="AutoLayoutFourthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hrh-AK-wHS"/>
+                        <viewControllerLayoutGuide type="bottom" id="y8a-rC-l5A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HZB-hA-2i9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hacker News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnZ-C8-1Uu">
+                                <rect key="frame" x="109" y="106" width="103" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="hvB-V2-DpA"/>
+                                    <constraint firstAttribute="height" constant="21" id="xI2-Dc-i02"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.23921568630000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTI-QT-BT5" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="135" width="320" height="433"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59543829703036066" green="0.86736686862244894" blue="0.67005059895083996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="433" id="zAl-LO-o4h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85714285714285721" green="0.72572182103969818" blue="0.51623376623376627" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WTI-QT-BT5" secondAttribute="trailing" id="0E5-ch-r2Y"/>
+                            <constraint firstAttribute="centerX" secondItem="rnZ-C8-1Uu" secondAttribute="centerX" constant="-0.5" id="AKA-JU-437"/>
+                            <constraint firstItem="WTI-QT-BT5" firstAttribute="leading" secondItem="HZB-hA-2i9" secondAttribute="leading" id="Kc5-DR-KXF"/>
+                            <constraint firstItem="y8a-rC-l5A" firstAttribute="top" secondItem="WTI-QT-BT5" secondAttribute="bottom" id="qPx-07-qzN"/>
+                            <constraint firstItem="WTI-QT-BT5" firstAttribute="top" secondItem="rnZ-C8-1Uu" secondAttribute="bottom" constant="8" id="qyz-Tb-Sc8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Auto Layout #4" id="29U-s1-iOa"/>
+                    <connections>
+                        <outlet property="bottomView" destination="WTI-QT-BT5" id="vAr-6m-DpI"/>
+                        <outlet property="bottomViewHeightConstraints" destination="zAl-LO-o4h" id="RSk-ea-c2i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVd-ao-8rE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="445"/>
+        </scene>
+        <!--View Controller - Auto Layout #3-->
+        <scene sceneID="zuF-x7-p65">
+            <objects>
+                <viewController id="aKa-Hj-mTe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aOf-Au-4Eo"/>
+                        <viewControllerLayoutGuide type="bottom" id="5w3-lR-m3U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xie-x7-87g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="21" text="WWDC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kS4-vR-jLM">
+                                <rect key="frame" x="89" y="273" width="142" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIH-Iw-N6d" userLabel="Blue View">
+                                <rect key="frame" x="38" y="504" width="245" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.19334583250892068" green="0.80608792733947121" blue="0.86226482780612246" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="jI5-cF-KhA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3807765796" green="0.72664880750000005" blue="0.27809034760000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JIH-Iw-N6d" firstAttribute="leading" secondItem="Xie-x7-87g" secondAttribute="leading" constant="38" id="1mR-Ok-3up"/>
+                            <constraint firstAttribute="centerX" secondItem="kS4-vR-jLM" secondAttribute="centerX" id="AqL-jB-0Uk"/>
+                            <constraint firstAttribute="trailing" secondItem="JIH-Iw-N6d" secondAttribute="trailing" constant="37" id="LQn-u9-5BJ"/>
+                            <constraint firstAttribute="centerY" secondItem="kS4-vR-jLM" secondAttribute="centerY" constant="0.5" id="PKz-wx-NKl"/>
+                            <constraint firstItem="5w3-lR-m3U" firstAttribute="top" secondItem="JIH-Iw-N6d" secondAttribute="bottom" id="PQG-9I-4TS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Auto Layout #3" id="jPh-yW-l8v">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Jr2-GL-kRE">
+                            <connections>
+                                <segue destination="svG-dN-SCy" kind="push" id="Tng-w1-jLo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orn-aB-NtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640" y="445"/>
+        </scene>
         <!--View Controller - Auto Layout #2-->
         <scene sceneID="AS0-Re-kmC">
             <objects>
@@ -173,11 +272,17 @@
                             <constraint firstAttribute="centerY" secondItem="GzK-A4-mds" secondAttribute="centerY" constant="0.5" id="Vvf-W4-21A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Auto Layout #2" id="60t-Ig-Io1"/>
+                    <navigationItem key="navigationItem" title="Auto Layout #2" id="60t-Ig-Io1">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="tRT-Iq-bOU">
+                            <connections>
+                                <segue destination="aKa-Hj-mTe" kind="push" id="cbi-Bd-gUr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfU-ay-1Qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="475"/>
+            <point key="canvasLocation" x="42" y="445"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
