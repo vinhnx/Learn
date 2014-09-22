@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ClockFace" translatesAutoresizingMaskIntoConstraints="NO" id="R6z-VN-vcc">
+                                <rect key="frame" x="65" y="76" width="256" height="256"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HourHand" translatesAutoresizingMaskIntoConstraints="NO" id="mFy-Tc-Ljc">
+                                <rect key="frame" x="178" y="157" width="30" height="94"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MinuteHand" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-fl-Uaq">
+                                <rect key="frame" x="183" y="151" width="20" height="106"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SecondHand" translatesAutoresizingMaskIntoConstraints="NO" id="Srt-uH-afC">
+                                <rect key="frame" x="189" y="153" width="8" height="102"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="hourHand" destination="mFy-Tc-Ljc" id="SAd-9E-VIx"/>
+                        <outlet property="minuteHand" destination="bKc-fl-Uaq" id="q2h-NN-0lc"/>
+                        <outlet property="secondHand" destination="Srt-uH-afC" id="lcD-Ld-x3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ClockFace" width="256" height="256"/>
+        <image name="HourHand" width="30" height="94"/>
+        <image name="MinuteHand" width="20" height="106"/>
+        <image name="SecondHand" width="8" height="102"/>
+    </resources>
+</document>
