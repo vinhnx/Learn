@@ -36,10 +36,11 @@
 - (void)drawLayer:(CATiledLayer *)layer inContext:(CGContextRef)ctx
 {
     CGRect bounds = CGContextGetClipBoundingBox(ctx);
-    NSInteger x = floor(bounds.origin.x / layer.tileSize.width);
-    NSInteger y = floor(bounds.origin.y / layer.tileSize.height);
+    CGFloat scale = [UIScreen mainScreen].scale;
+    NSInteger x = floor(bounds.origin.x / layer.tileSize.width * scale);
+    NSInteger y = floor(bounds.origin.y / layer.tileSize.height * scale);
     
-    NSString *imageName = [NSString stringWithFormat:@"Snowman_%02li_%02li", (long)x, (long)y];
+    NSString *imageName = [NSString stringWithFormat:@"Snowman_0%@_0%@", @(x), @(y)];
     NSString *imageFilePath = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
     UIImage *tileImage = [UIImage imageWithContentsOfFile:imageFilePath];
     
