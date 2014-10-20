@@ -41,6 +41,11 @@
 
 - (void)tick
 {
+    [self updateHandAnimated:YES];
+}
+
+- (void)updateHandAnimated:(BOOL)animated
+{
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSUInteger units = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     NSDate *now = [NSDate date];
@@ -51,12 +56,34 @@
     CGFloat secondAngle = (dateComponents.second / 60.0) * M_PI * 2.0;
     
     // rotate hands
-    [UIView animateWithDuration:.15 animations:^{
-        self.hourHand.transform = CGAffineTransformMakeRotation(hourAngle);
-        self.minuteHand.transform = CGAffineTransformMakeRotation(minuteAngle);
-        self.secondHand.transform = CGAffineTransformMakeRotation(secondAngle);
-    }];
+    [self setAngle:hourAngle forHand:self.hourHand animated:YES];
+    [self setAngle:minuteAngle forHand:self.minuteHand animated:YES];
+    [self setAngle:secondAngle forHand:self.secondHand animated:YES];
 }
 
+- (void)setAngle:(CGFloat)angle forHand:(UIView *)handView animated:(BOOL)animated
+{
+    CATransform3D transform = CATransform3DMakeRotation(angle, 0, 0, 1);
+    
+    if (animated) {
+        CABasicAnimation *animation = [CABasicAnimation animation];
+        animation.keyPath = @"transform";
+        animation.toValue = [NSValue valueWithCATransform3D:transform];
+        animation.duration = .5;
+        animation.delegate = self;
+        [animation setValue:handView forKey:@"handView"];
+        [handView.layer addAnimation:animation forKey:nil];
+    } else {
+        // set transform directly
+        handView.layer.transform = transform;
+    }
+}
+
+- (void)animationDidStop:(CABasicAnimation *)anim finished:(BOOL)flag
+{
+    // set final position for hand view
+    UIView *handView = [anim valueForKey:@"handView"];
+    handView.layer.transform = [anim.toValue CATransform3DValue];
+}
 
 @end
